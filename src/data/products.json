@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "title": "Love Reading",
+    "description": "Gain insight into your romantic relationships and future love path.",
+    "price": 12.99,
+    "stock": 15,
+    "rating": 4.8,
+    "categoryId": 4
+  },
+  {
+    "id": 2,
+    "title": "Career Guidance",
+    "description": "Explore your career direction and unlock your professional potential.",
+    "price": 14.99,
+    "stock": 10,
+    "rating": 4.6,
+    "categoryId": 4
+  },
+  {
+    "id": 3,
+    "title": "Past Life Reading",
+    "description": "Discover your past life influences and karmic lessons.",
+    "price": 16.5,
+    "stock": 8,
+    "rating": 4.7,
+    "categoryId": 4
+  },
+  {
+    "id": 4,
+    "title": "Energy Check-In",
+    "description": "Receive a detailed energy scan and aura interpretation.",
+    "price": 11.5,
+    "stock": 12,
+    "rating": 4.5,
+    "categoryId": 4
+  },
+  {
+    "id": 5,
+    "title": "Spiritual Path Reading",
+    "description": "Align with your soul purpose and navigate your spiritual path.",
+    "price": 17.0,
+    "stock": 7,
+    "rating": 4.9,
+    "categoryId": 4
+  },
+  {
+    "id": 6,
+    "title": "Year Ahead Forecast",
+    "description": "Personalized 12-month reading highlighting key opportunities and challenges.",
+    "price": 20.0,
+    "stock": 6,
+    "rating": 4.6,
+    "categoryId": 4
+  },
+  {
+    "id": 7,
+    "title": "Chakra Alignment Reading",
+    "description": "Find which chakras are blocked or overactive and how to rebalance them.",
+    "price": 13.5,
+    "stock": 9,
+    "rating": 4.7,
+    "categoryId": 4
+  },
+  {
+    "id": 8,
+    "title": "Twin Flame Reading",
+    "description": "Understand the soul connection and dynamics between you and your twin flame.",
+    "price": 18.75,
+    "stock": 5,
+    "rating": 4.4,
+    "categoryId": 4
+  },
+  {
+    "id": 9,
+    "title": "Ancestral Healing Reading",
+    "description": "Uncover inherited patterns and messages from your ancestral line.",
+    "price": 15.5,
+    "stock": 10,
+    "rating": 4.6,
+    "categoryId": 4
+  },
+  {
+    "id": 10,
+    "title": "Yes or No Quick Reading",
+    "description": "Direct and concise guidance to a specific yes/no question.",
+    "price": 5.99,
+    "stock": 20,
+    "rating": 4.3,
+    "categoryId": 4
+  },
+  {
+    "id": 11,
+    "title": "Rider-Waite Tarot Deck",
+    "description": "The classic and most recognized tarot deck, ideal for beginners and experts.",
+    "price": 24.99,
+    "stock": 18,
+    "rating": 4.9,
+    "categoryId": 0
+  },
+  {
+    "id": 12,
+    "title": "Thoth Tarot Deck",
+    "description": "A deeply esoteric deck designed by Aleister Crowley, rich in symbolism.",
+    "price": 29.5,
+    "stock": 10,
+    "rating": 4.7,
+    "categoryId": 0
+  },
+  {
+    "id": 13,
+    "title": "Modern Witch Tarot",
+    "description": "A vibrant, feminist take on the Rider-Waite deck with modern imagery.",
+    "price": 26.0,
+    "stock": 12,
+    "rating": 4.8,
+    "categoryId": 0
+  },
+  {
+    "id": 14,
+    "title": "Wild Unknown Tarot",
+    "description": "Intuitive and nature-based, perfect for introspective readings.",
+    "price": 27.75,
+    "stock": 9,
+    "rating": 4.6,
+    "categoryId": 0
+  },
+  {
+    "id": 15,
+    "title": "Moonchild Tarot",
+    "description": "A dreamy, divine feminine deck full of cosmic aesthetics.",
+    "price": 35.0,
+    "stock": 6,
+    "rating": 4.9,
+    "categoryId": 0
+  },
+  {
+    "id": 16,
+    "title": "Golden Art Nouveau Tarot",
+    "description": "Classic tarot structure enhanced with elegant gold foil illustrations.",
+    "price": 28.9,
+    "stock": 7,
+    "rating": 4.7,
+    "categoryId": 0
+  },
+  {
+    "id": 17,
+    "title": "Light Seer's Tarot",
+    "description": "Modern and soulful deck for shadow work and spiritual clarity.",
+    "price": 25.0,
+    "stock": 11,
+    "rating": 4.8,
+    "categoryId": 0
+  },
+  {
+    "id": 18,
+    "title": "Tarot of the Divine",
+    "description": "Inspires readings through myths and folktales from around the world.",
+    "price": 22.5,
+    "stock": 14,
+    "rating": 4.6,
+    "categoryId": 0
+  },
+  {
+    "id": 19,
+    "title": "Mystic Mondays Tarot",
+    "description": "Bold, colorful, and empowering — great for intuitive readers.",
+    "price": 23.75,
+    "stock": 13,
+    "rating": 4.5,
+    "categoryId": 0
+  },
+  {
+    "id": 20,
+    "title": "Tarot de Marseille",
+    "description": "One of the oldest and most traditional decks used in Europe.",
+    "price": 21.99,
+    "stock": 10,
+    "rating": 4.4,
+    "categoryId": 0
+  },
+  {
+    "id": 21,
+    "title": "Amethyst Cluster",
+    "description": "Promotes calm, balance, and peace. Ideal for meditation spaces.",
+    "price": 18.5,
+    "stock": 15,
+    "rating": 4.9,
+    "categoryId": 1
+  },
+  {
+    "id": 22,
+    "title": "Rose Quartz Heart",
+    "description": "The stone of unconditional love and emotional healing.",
+    "price": 14.75,
+    "stock": 20,
+    "rating": 4.8,
+    "categoryId": 1
+  },
+  {
+    "id": 23,
+    "title": "Clear Quartz Point",
+    "description": "A master healer that amplifies energy and intention.",
+    "price": 13.9,
+    "stock": 18,
+    "rating": 4.7,
+    "categoryId": 1
+  },
+  {
+    "id": 24,
+    "title": "Citrine Tumbled Stone",
+    "description": "Attracts abundance, joy, and success.",
+    "price": 6.5,
+    "stock": 25,
+    "rating": 4.6,
+    "categoryId": 1
+  },
+  {
+    "id": 25,
+    "title": "Black Tourmaline Chunk",
+    "description": "Protects against negativity and electromagnetic pollution.",
+    "price": 11.25,
+    "stock": 14,
+    "rating": 4.8,
+    "categoryId": 1
+  },
+  {
+    "id": 26,
+    "title": "Labradorite Palm Stone",
+    "description": "Enhances intuition and spiritual connection.",
+    "price": 15.0,
+    "stock": 10,
+    "rating": 4.9,
+    "categoryId": 1
+  },
+  {
+    "id": 27,
+    "title": "Selenite Wand",
+    "description": "Cleanses aura and charges other crystals. No need to be cleansed.",
+    "price": 9.99,
+    "stock": 17,
+    "rating": 4.7,
+    "categoryId": 1
+  },
+  {
+    "id": 28,
+    "title": "Green Aventurine Cube",
+    "description": "Known for prosperity, growth, and good luck.",
+    "price": 7.95,
+    "stock": 13,
+    "rating": 4.6,
+    "categoryId": 1
+  },
+  {
+    "id": 29,
+    "title": "Blue Lace Agate Slice",
+    "description": "Soothes anxiety and promotes gentle communication.",
+    "price": 12.5,
+    "stock": 8,
+    "rating": 4.5,
+    "categoryId": 1
+  },
+  {
+    "id": 30,
+    "title": "Tiger's Eye Sphere",
+    "description": "Builds confidence and courage. Great for grounding energy.",
+    "price": 16.2,
+    "stock": 9,
+    "rating": 4.7,
+    "categoryId": 1
+  },
+  {
+    "id": 31,
+    "title": "Lavender Relaxation Candle",
+    "description": "Infused with natural lavender to calm the mind and body.",
+    "price": 10.5,
+    "stock": 20,
+    "rating": 4.8,
+    "categoryId": 2
+  },
+  {
+    "id": 32,
+    "title": "Protection Black Candle",
+    "description": "Ideal for rituals and warding off negative energy.",
+    "price": 8.75,
+    "stock": 15,
+    "rating": 4.6,
+    "categoryId": 2
+  },
+  {
+    "id": 33,
+    "title": "Love Attraction Red Candle",
+    "description": "Used in spells and meditations to attract love and passion.",
+    "price": 9.25,
+    "stock": 18,
+    "rating": 4.7,
+    "categoryId": 2
+  },
+  {
+    "id": 34,
+    "title": "Full Moon Ritual Candle",
+    "description": "Perfect for full moon ceremonies and releasing rituals.",
+    "price": 12.0,
+    "stock": 10,
+    "rating": 4.9,
+    "categoryId": 2
+  },
+  {
+    "id": 35,
+    "title": "Money Drawing Candle",
+    "description": "Charged to attract financial success and abundance.",
+    "price": 11.25,
+    "stock": 12,
+    "rating": 4.5,
+    "categoryId": 2
+  },
+  {
+    "id": 36,
+    "title": "Vanilla Peace Candle",
+    "description": "Creates a comforting and peaceful atmosphere at home.",
+    "price": 10.0,
+    "stock": 16,
+    "rating": 4.6,
+    "categoryId": 2
+  },
+  {
+    "id": 37,
+    "title": "Chakra Alignment Candle Set",
+    "description": "7 colored candles to align and balance each chakra.",
+    "price": 19.95,
+    "stock": 8,
+    "rating": 4.9,
+    "categoryId": 2
+  },
+  {
+    "id": 38,
+    "title": "Eucalyptus Clarity Candle",
+    "description": "Cleanses the space and promotes mental clarity.",
+    "price": 9.85,
+    "stock": 14,
+    "rating": 4.7,
+    "categoryId": 2
+  },
+  {
+    "id": 39,
+    "title": "New Moon Intention Candle",
+    "description": "For setting new goals and manifesting desires.",
+    "price": 11.5,
+    "stock": 10,
+    "rating": 4.8,
+    "categoryId": 2
+  },
+  {
+    "id": 40,
+    "title": "Frankincense & Myrrh Candle",
+    "description": "A sacred scent for meditation, rituals, and protection.",
+    "price": 13.25,
+    "stock": 9,
+    "rating": 4.7,
+    "categoryId": 2
+  },
+  {
+    "id": 41,
+    "title": "Beginner's Witchcraft Kit",
+    "description": "A perfect starter set with candles, herbs, and a small crystal.",
+    "price": 29.99,
+    "stock": 10,
+    "rating": 4.8,
+    "categoryId": 3
+  },
+  {
+    "id": 42,
+    "title": "Full Moon Ritual Kit",
+    "description": "Includes white candle, moon water bottle, herbs and guidance scroll.",
+    "price": 34.5,
+    "stock": 7,
+    "rating": 4.9,
+    "categoryId": 3
+  },
+  {
+    "id": 43,
+    "title": "Love Attraction Kit",
+    "description": "Designed to attract love using rose quartz, oils, and spell instructions.",
+    "price": 26.75,
+    "stock": 12,
+    "rating": 4.6,
+    "categoryId": 3
+  },
+  {
+    "id": 44,
+    "title": "Protection & Cleansing Kit",
+    "description": "Features black tourmaline, white sage, and a protective spell jar.",
+    "price": 31.2,
+    "stock": 9,
+    "rating": 4.7,
+    "categoryId": 3
+  },
+  {
+    "id": 45,
+    "title": "New Moon Manifestation Kit",
+    "description": "Contains a manifestation journal, candle, herbs and palo santo.",
+    "price": 33.9,
+    "stock": 8,
+    "rating": 4.8,
+    "categoryId": 3
+  },
+  {
+    "id": 46,
+    "title": "Chakra Balancing Kit",
+    "description": "Includes 7 crystals, incense, and a chakra guide scroll.",
+    "price": 27.5,
+    "stock": 14,
+    "rating": 4.7,
+    "categoryId": 3
+  },
+  {
+    "id": 47,
+    "title": "Abundance Spell Kit",
+    "description": "Green candle, money oil, basil leaves and affirmation scroll.",
+    "price": 25.25,
+    "stock": 11,
+    "rating": 4.5,
+    "categoryId": 3
+  },
+  {
+    "id": 48,
+    "title": "Psychic Intuition Kit",
+    "description": "Features amethyst, candle, dream journal and lavender herb.",
+    "price": 30.0,
+    "stock": 7,
+    "rating": 4.6,
+    "categoryId": 3
+  },
+  {
+    "id": 49,
+    "title": "Witch's Travel Kit",
+    "description": "Compact pouch with mini candles, vial herbs, and crystals.",
+    "price": 22.99,
+    "stock": 15,
+    "rating": 4.4,
+    "categoryId": 3
+  },
+  {
+    "id": 50,
+    "title": "Divination Essentials Kit",
+    "description": "Includes pendulum, casting cloth, incense and energy-clearing spray.",
+    "price": 36.0,
+    "stock": 6,
+    "rating": 4.9,
+    "categoryId": 3
+  }
+]

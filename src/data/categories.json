@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name": "Tarot Cards",
+    "description": "Explore a variety of tarot decks for all levels and styles.",
+    "image": "https://i.postimg.cc/Pq6rS2nC/mazos-de-tarot-removebg-preview.png"
+  },
+  {
+    "id": 1,
+    "name": "Crystals",
+    "description": "Find healing and energy-balancing crystals and stones.",
+    "image": "https://i.postimg.cc/tTwRjJTy/cristales-energeticos-removebg-preview.png"
+  },
+  {
+    "id": 2,
+    "name": "Candles",
+    "description": "Spiritual and ritual candles to enhance your energy and intentions.",
+    "image": "https://i.postimg.cc/CKMxC9Xy/velas-removebg-preview.png"
+  },
+  {
+    "id": 3,
+    "name": "Mystic Kits",
+    "description": "All-in-one spiritual kits to support your rituals and practices.",
+    "image": "https://i.postimg.cc/BnBvKJhc/mistic-kits-removebg-preview.png"
+  },
+  {
+    "id": 4,
+    "name": "Readings",
+    "description": "Book personalized tarot readings and spiritual guidance.",
+    "image": "https://i.postimg.cc/9QLh208S/lecturas-removebg-preview.png"
+  }
+]
