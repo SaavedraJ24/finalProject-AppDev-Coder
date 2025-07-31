@@ -5,7 +5,7 @@ export const Header = ({title}) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{title}</Text>
-            <Text style={styles.subtitle}>Categories</Text>
+            <Text style={styles.subtitle}>Home</Text>
         </View>
     )
 }

@@ -31,7 +31,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="dark" />
-      <Header title="Vibrar con Luna" />
+      <Header title="Vibrar con la Luna" />
       {
         categorySelected !== null ?
           <ProductsByCategory category={categorySelected} />

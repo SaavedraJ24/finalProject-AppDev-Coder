@@ -6,12 +6,10 @@ import { colors } from '../global/colors';
 
 const Categories = ({ setCategoriesSelected }) => {
     const renderCategoryItem = ({ item }) => (
-        <Pressable onPress={()=> setCategoriesSelected(item.id)}>
-            <FlatCard>
-                <View style={styles.categoryContainer}>
-                    <TextDeliusSwashCapsRegular style={styles.text}>{item.name}</TextDeliusSwashCapsRegular>
-                    <Image style={styles.image} source={{ uri: item.image }} />
-                </View>
+        <Pressable onPress={() => setCategoriesSelected(item.id)}>
+            <FlatCard style={styles.categoryContainer}>
+                <TextDeliusSwashCapsRegular style={styles.text}>{item.name}</TextDeliusSwashCapsRegular>
+                <Image style={styles.image} source={{ uri: item.image }} />
             </FlatCard>
         </Pressable>
     )
@@ -29,20 +27,17 @@ export default Categories;
 const styles = StyleSheet.create({
     categoryContainer: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
         gap: 8,
     },
     image: {
         height: 60,
-        width: 80,
+        width: 75,
         resizeMode: 'contain',
     },
     text: {
         color: colors.light.text,
-        fontSize: 18,
+        fontSize: 28,
     }
 })
-
-
-/*  NO ANDA EN LA APP   ->  MIRAR CLASE 4*/

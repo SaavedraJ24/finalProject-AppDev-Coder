@@ -11,7 +11,7 @@ export const FlatCard = ({ children, style }) => {
 
 const styles = StyleSheet.create({
     container: {
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         backgroundColor: colors.light.background,
         alignItems: 'center',
         paddingVertical: 16,

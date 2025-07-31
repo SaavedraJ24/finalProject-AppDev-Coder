@@ -2,18 +2,28 @@ import { useEffect, useState } from 'react';
 import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native'
 import products from '../data/products.json';
 import { TextDeliusSwashCapsRegular } from '../components/TextDeliusSwashCapsRegular';
+import { SearchInput } from '../components/SearchInput';
 import { FlatCard } from '../components/FlatCard';
 import { colors } from '../global/colors';
 
-const ProductsByCategory = ({category}) => {
+const ProductsByCategory = ({ category }) => {
     const [productsFiltered, setProductsFiltered] = useState([]);
+    const [keyword, setKeyword] = useState("");
 
-    useEffect(()=> {
-        setProductsFiltered(products.filter(product => product.categoryId === category));
-    },[category])
+    useEffect(() => {
+        const filteredByCategory = products.filter(product => product.categoryId === category);
+        if (keyword) {
+            const filteredByKeyword = filteredByCategory.filter(
+                product => product.title.toLowerCase().includes(keyword.toLowerCase())
+            );
+            setProductsFiltered(filteredByKeyword);
+        } else {
+            setProductsFiltered(filteredByCategory);
+        }
+    }, [category, keyword, products]);
 
     const renderProductByCategory = ({ item }) => (
-        <FlatCard>
+        <FlatCard style={styles.flatcardContainer}>
             <View style={styles.productCategory}>
                 <TextDeliusSwashCapsRegular style={styles.text}>{item.title}</TextDeliusSwashCapsRegular>
             </View>
@@ -22,6 +32,7 @@ const ProductsByCategory = ({category}) => {
 
     return (
         <SafeAreaView style={styles.container}>
+            <SearchInput keyword={keyword} setKeyword={setKeyword} />
             <FlatList
                 data={productsFiltered}
                 renderItem={renderProductByCategory}
@@ -41,5 +52,8 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 18,
         color: colors.light.text,
+    },
+    flatcardContainer: {
+        padding: 12,
     }
 })
