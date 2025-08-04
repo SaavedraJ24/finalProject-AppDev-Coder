@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react';
-import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native'
-import products from '../data/products.json';
-import { TextDeliusSwashCapsRegular } from '../components/TextDeliusSwashCapsRegular';
-import { SearchInput } from '../components/SearchInput';
-import { FlatCard } from '../components/FlatCard';
-import { colors } from '../global/colors';
+import { FlatList, Pressable, SafeAreaView, StyleSheet, View } from 'react-native'
+import products from '../../data/products.json';
+import { TextDeliusSwashCapsRegular } from '../../components/TextDeliusSwashCapsRegular';
+import { SearchInput } from '../../components/SearchInput';
+import { FlatCard } from '../../components/FlatCard';
+import { colors } from '../../global/colors';
 
-const ProductsByCategory = ({ category }) => {
+const ProductsByCategory = ({ navigation, route }) => {
     const [productsFiltered, setProductsFiltered] = useState([]);
     const [keyword, setKeyword] = useState("");
+    // console.log(route);
+    const { category } = route.params;
 
     useEffect(() => {
         const filteredByCategory = products.filter(product => product.categoryId === category);
@@ -23,11 +25,13 @@ const ProductsByCategory = ({ category }) => {
     }, [category, keyword, products]);
 
     const renderProductByCategory = ({ item }) => (
-        <FlatCard style={styles.flatcardContainer}>
-            <View style={styles.productCategory}>
-                <TextDeliusSwashCapsRegular style={styles.text}>{item.title}</TextDeliusSwashCapsRegular>
-            </View>
-        </FlatCard>
+        <Pressable onPress={() => navigation.navigate("ProductDetail", {product: item})}>
+            <FlatCard style={styles.flatcardContainer}>
+                <View style={styles.productCategory}>
+                    <TextDeliusSwashCapsRegular style={styles.text}>{item.title}</TextDeliusSwashCapsRegular>
+                </View>
+            </FlatCard>
+        </Pressable>
     )
 
     return (

@@ -1,12 +1,12 @@
-import { StyleSheet, View, FlatList, Image, Pressable } from 'react-native'
-import categories from '../data/categories.json';
-import { FlatCard } from '../components/FlatCard';
-import { TextDeliusSwashCapsRegular } from '../components/TextDeliusSwashCapsRegular';
-import { colors } from '../global/colors';
+import { StyleSheet, FlatList, Image, Pressable } from 'react-native'
+import categories from '../../data/categories.json';
+import { FlatCard } from '../../components/FlatCard';
+import { TextDeliusSwashCapsRegular } from '../../components/TextDeliusSwashCapsRegular';
+import { colors } from '../../global/colors';
 
-const Categories = ({ setCategoriesSelected }) => {
+const Categories = ({ navigation }) => {
     const renderCategoryItem = ({ item }) => (
-        <Pressable onPress={() => setCategoriesSelected(item.id)}>
+        <Pressable onPress={() => navigation.navigate("Products", {category: item.id})}>
             <FlatCard style={styles.categoryContainer}>
                 <TextDeliusSwashCapsRegular style={styles.text}>{item.name}</TextDeliusSwashCapsRegular>
                 <Image style={styles.image} source={{ uri: item.image }} />

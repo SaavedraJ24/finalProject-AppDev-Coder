@@ -1,4 +1,4 @@
-import { Text, TextInput } from 'react-native';
+import { Text } from 'react-native';
 
 export const TextDeliusSwashCapsRegular = ({ children, style }) => {
   return (

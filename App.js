@@ -1,21 +1,20 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, SafeAreaView } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
-import { Header } from './src/components/Header';
-import Categories from './src/screens/Categories';
-import ProductsByCategory from './src/screens/ProductsByCategory';
+import { NavigationContainer } from '@react-navigation/native';
+import { TabNavigator } from './src/navigation/TabNavigator';
 
 SplashScreen.preventAutoHideAsync();
 
-export default function App() {
-  const [categorySelected, setCategorySelected] = useState(null);
+const App = () => {
   const [loaded, error] = useFonts({
     'Pacifico-Regular': require('./assets/Fonts/Pacifico-Regular.ttf'),
     'DeliusSwashCaps-Regular': require('./assets/Fonts/DeliusSwashCaps-Regular.ttf'),
+    'Kalam-Bold': require('./assets/Fonts/Kalam-Bold.ttf'),
   });
-  console.log(categorySelected)
+
   useEffect(() => {
     if (loaded || error) {
       SplashScreen.hideAsync();
@@ -26,21 +25,17 @@ export default function App() {
     return null;
   }
 
-
-
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar style="dark" />
-      <Header title="Vibrar con la Luna" />
-      {
-        categorySelected !== null ?
-          <ProductsByCategory category={categorySelected} />
-          :
-          <Categories setCategoriesSelected={setCategorySelected} />
-      }
-    </SafeAreaView>
+      <NavigationContainer>
+        <TabNavigator />
+      </NavigationContainer>
+    </View>
   );
 }
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
@@ -48,5 +43,3 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFAFA",
   },
 });
-
-/*  NO ANDA EN LA APP   ->  MIRAR CLASE 4*/
