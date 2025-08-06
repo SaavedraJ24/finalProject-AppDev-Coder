@@ -1,12 +1,23 @@
 import { StyleSheet, FlatList, Image, Pressable } from 'react-native'
-import categories from '../../data/categories.json';
+//import categories from '../../data/categories.json';
 import { FlatCard } from '../../components/FlatCard';
 import { TextDeliusSwashCapsRegular } from '../../components/TextDeliusSwashCapsRegular';
 import { colors } from '../../global/colors';
+import { useSelector, useDispatch } from 'react-redux';
+import { setCategorySelected, filterProducts } from '../../features/shop/shopSlice';
+
 
 const Categories = ({ navigation }) => {
+    const categories = useSelector((state) => (state.shopReducer.categories))
+    const dispatch = useDispatch();
+
     const renderCategoryItem = ({ item }) => (
-        <Pressable onPress={() => navigation.navigate("Products", {category: item.id})}>
+        <Pressable onPress={
+            () => {
+                dispatch(setCategorySelected(item.id))
+                dispatch(filterProducts())
+                navigation.navigate("Products")
+            }} >
             <FlatCard style={styles.categoryContainer}>
                 <TextDeliusSwashCapsRegular style={styles.text}>{item.name}</TextDeliusSwashCapsRegular>
                 <Image style={styles.image} source={{ uri: item.image }} />

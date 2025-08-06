@@ -10,17 +10,15 @@ export const SearchInput = ({keyword, setKeyword}) => {
         style={styles.searchInput}
         value={keyword}
       />
-      <EvilIcons name='search' size={36} color={colors.light.text}/>
+      <EvilIcons name='search' size={36} style={styles.searchIcon}/>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
     searchContainer: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
       alignItems: 'center',
-      margin: 6,
+      marginVertical: 16,
     },
     searchInput: {
         color: colors.light.text,
@@ -30,5 +28,10 @@ const styles = StyleSheet.create({
         padding: 8,
         width: '80%',
         fontFamily: 'DeliusSwashCaps-Regular',
+    },
+    searchIcon: {
+      color: colors.light.shadowColor,
+      position: 'absolute',
+      right: 42,
     }
 })

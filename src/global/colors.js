@@ -4,5 +4,7 @@ export const colors = {
         headline: "#b05e56",
         text: "#3c3c3c",
         shadowColor: "#bb756e",
+        tags: "#ff9292",
+        purchaseBtn: "#fb7185",
     },
 };

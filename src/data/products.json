@@ -6,7 +6,9 @@
     "price": 12.99,
     "stock": 15,
     "rating": 4.8,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/4N0Wm97F/love-Reading.png",
+    "tags": "new"
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@
     "price": 14.99,
     "stock": 10,
     "rating": 4.6,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/xCSjv58x/career-Guidence.png",
+    "tags": "new"
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "price": 16.5,
     "stock": 8,
     "rating": 4.7,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/tCgqNYRj/past-Life-reading.png",
+    "tags": "new"
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "price": 11.5,
     "stock": 12,
     "rating": 4.5,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/V67Tfsxq/energy-Check-In.png",
+    "tags": "new"
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@
     "price": 17.0,
     "stock": 7,
     "rating": 4.9,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/T2BxgQsr/spiritual-Path-reading.png",
+    "tags": "new"
   },
   {
     "id": 6,
@@ -51,7 +61,9 @@
     "price": 20.0,
     "stock": 6,
     "rating": 4.6,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/Pq59B8cX/year-Ahead-Forecast.png",
+    "tags": "new"
   },
   {
     "id": 7,
@@ -60,7 +72,9 @@
     "price": 13.5,
     "stock": 9,
     "rating": 4.7,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/GmYZFCDR/chakra-Aligment.png",
+    "tags": "new"
   },
   {
     "id": 8,
@@ -69,7 +83,9 @@
     "price": 18.75,
     "stock": 5,
     "rating": 4.4,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/FHm2V6VJ/twin-Flame-reading.png",
+    "tags": "new"
   },
   {
     "id": 9,
@@ -78,7 +94,9 @@
     "price": 15.5,
     "stock": 10,
     "rating": 4.6,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/NFM3m26C/ancestral-Healing.png",
+    "tags": "new"
   },
   {
     "id": 10,
@@ -87,7 +105,9 @@
     "price": 5.99,
     "stock": 20,
     "rating": 4.3,
-    "categoryId": 4
+    "categoryId": 4,
+    "mainImage": "https://i.postimg.cc/nrBPvKsk/yes-Or-No-reading.png",
+    "tags": "new"
   },
   {
     "id": 11,
@@ -96,7 +116,9 @@
     "price": 24.99,
     "stock": 18,
     "rating": 4.9,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/4ycpyBKJ/rider-Waite.png",
+    "tags": "new"
   },
   {
     "id": 12,
@@ -105,7 +127,9 @@
     "price": 29.5,
     "stock": 10,
     "rating": 4.7,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/7Lz0PKjm/thoth-Tarot.png",
+    "tags": "new"
   },
   {
     "id": 13,
@@ -114,7 +138,9 @@
     "price": 26.0,
     "stock": 12,
     "rating": 4.8,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/CxSbMCwg/modern-Witch.png",
+    "tags": "new"
   },
   {
     "id": 14,
@@ -123,7 +149,9 @@
     "price": 27.75,
     "stock": 9,
     "rating": 4.6,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/zBgyF3q7/wild-Unknown.png",
+    "tags": "new"
   },
   {
     "id": 15,
@@ -132,7 +160,9 @@
     "price": 35.0,
     "stock": 6,
     "rating": 4.9,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/br0d4MD2/moonchild.png",
+    "tags": "new"
   },
   {
     "id": 16,
@@ -141,7 +171,9 @@
     "price": 28.9,
     "stock": 7,
     "rating": 4.7,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/9Q0FBzp9/golden-Art-Nouveau.png",
+    "tags": "new"
   },
   {
     "id": 17,
@@ -150,7 +182,9 @@
     "price": 25.0,
     "stock": 11,
     "rating": 4.8,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/yd3DyjF2/light-Seer.png",
+    "tags": "new"
   },
   {
     "id": 18,
@@ -159,7 +193,9 @@
     "price": 22.5,
     "stock": 14,
     "rating": 4.6,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/63Ymz6z7/divine.png",
+    "tags": "new"
   },
   {
     "id": 19,
@@ -168,7 +204,9 @@
     "price": 23.75,
     "stock": 13,
     "rating": 4.5,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/wTSbwG5k/mystic-Mondays.png",
+    "tags": "new"
   },
   {
     "id": 20,
@@ -177,7 +215,9 @@
     "price": 21.99,
     "stock": 10,
     "rating": 4.4,
-    "categoryId": 0
+    "categoryId": 0,
+    "mainImage": "https://i.postimg.cc/sDZTGJFG/marseille.png",
+    "tags": "new"
   },
   {
     "id": 21,
@@ -186,7 +226,9 @@
     "price": 18.5,
     "stock": 15,
     "rating": 4.9,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/43wPRLcq/amethyst-Cluster.png",
+    "tags": "new"
   },
   {
     "id": 22,
@@ -195,7 +237,9 @@
     "price": 14.75,
     "stock": 20,
     "rating": 4.8,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/bJBRsZ3R/rose-Quartz-Heart.png",
+    "tags": "new"
   },
   {
     "id": 23,
@@ -204,7 +248,9 @@
     "price": 13.9,
     "stock": 18,
     "rating": 4.7,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/BbvHc4wn/clear-Quartz.png",
+    "tags": "new"
   },
   {
     "id": 24,
@@ -213,7 +259,9 @@
     "price": 6.5,
     "stock": 25,
     "rating": 4.6,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/Df4N1hLz/citrine-Tumbled-Stone.png",
+    "tags": "new"
   },
   {
     "id": 25,
@@ -222,7 +270,9 @@
     "price": 11.25,
     "stock": 14,
     "rating": 4.8,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/HsQPPtSD/black-Tourmaline-Chunk.png",
+    "tags": "new"
   },
   {
     "id": 26,
@@ -231,7 +281,9 @@
     "price": 15.0,
     "stock": 10,
     "rating": 4.9,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/htsZKtW2/labradorite-Palm-Stone.png",
+    "tags": "new"
   },
   {
     "id": 27,
@@ -240,7 +292,9 @@
     "price": 9.99,
     "stock": 17,
     "rating": 4.7,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/B6Lm558z/selenite-Wand.png",
+    "tags": "new"
   },
   {
     "id": 28,
@@ -249,7 +303,9 @@
     "price": 7.95,
     "stock": 13,
     "rating": 4.6,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/vBJ301fZ/green-Aventurine-Cube.png",
+    "tags": "new"
   },
   {
     "id": 29,
@@ -258,7 +314,9 @@
     "price": 12.5,
     "stock": 8,
     "rating": 4.5,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/5NYfHDN5/blue-Lace-Agate.png",
+    "tags": "new"
   },
   {
     "id": 30,
@@ -267,7 +325,9 @@
     "price": 16.2,
     "stock": 9,
     "rating": 4.7,
-    "categoryId": 1
+    "categoryId": 1,
+    "mainImage": "https://i.postimg.cc/903HyQfG/tigers-Eye-Sphere.png",
+    "tags": "new"
   },
   {
     "id": 31,
@@ -276,7 +336,9 @@
     "price": 10.5,
     "stock": 20,
     "rating": 4.8,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/1zPVPD1q/lavender-Relaxation-Candle.png",
+    "tags": "new"
   },
   {
     "id": 32,
@@ -285,7 +347,9 @@
     "price": 8.75,
     "stock": 15,
     "rating": 4.6,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/LX1r4FVh/protection-Black-Candle.png",
+    "tags": "new"
   },
   {
     "id": 33,
@@ -294,7 +358,9 @@
     "price": 9.25,
     "stock": 18,
     "rating": 4.7,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/x8VBcps5/love-Attraction-Red-Candle.png",
+    "tags": "new"
   },
   {
     "id": 34,
@@ -303,7 +369,9 @@
     "price": 12.0,
     "stock": 10,
     "rating": 4.9,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/28mPYJL8/full-Moon-Ritual-Candle.png",
+    "tags": "new"
   },
   {
     "id": 35,
@@ -312,7 +380,9 @@
     "price": 11.25,
     "stock": 12,
     "rating": 4.5,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/X78tY89K/money-Drawing-Candle.png",
+    "tags": "new"
   },
   {
     "id": 36,
@@ -321,7 +391,9 @@
     "price": 10.0,
     "stock": 16,
     "rating": 4.6,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/sgH8pg6v/vanilla-Peace-Candle.png",
+    "tags": "new"
   },
   {
     "id": 37,
@@ -330,7 +402,9 @@
     "price": 19.95,
     "stock": 8,
     "rating": 4.9,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/cJKzTG2T/chakra-Alignment-Candle-Set.png",
+    "tags": "new"
   },
   {
     "id": 38,
@@ -339,7 +413,9 @@
     "price": 9.85,
     "stock": 14,
     "rating": 4.7,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/1RKvGz4s/eucalyptus-Clarity-Candle.png",
+    "tags": "new"
   },
   {
     "id": 39,
@@ -348,7 +424,9 @@
     "price": 11.5,
     "stock": 10,
     "rating": 4.8,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/wTT00dsJ/new-Moon-Intention-Candle.png",
+    "tags": "new"
   },
   {
     "id": 40,
@@ -357,7 +435,9 @@
     "price": 13.25,
     "stock": 9,
     "rating": 4.7,
-    "categoryId": 2
+    "categoryId": 2,
+    "mainImage": "https://i.postimg.cc/qvGKYtVv/frankincense-And-Myrrh-Candle.png",
+    "tags": "new"
   },
   {
     "id": 41,
@@ -366,7 +446,9 @@
     "price": 29.99,
     "stock": 10,
     "rating": 4.8,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/wTgTrw6D/beginners-Witchcraft-Kit.png",
+    "tags": "new"
   },
   {
     "id": 42,
@@ -375,7 +457,9 @@
     "price": 34.5,
     "stock": 7,
     "rating": 4.9,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/bwFys81R/full-Moon-Ritual-Kit.png",
+    "tags": "new"
   },
   {
     "id": 43,
@@ -384,7 +468,9 @@
     "price": 26.75,
     "stock": 12,
     "rating": 4.6,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/CKBF8tNp/love-Attraction-Kit.png",
+    "tags": "new"
   },
   {
     "id": 44,
@@ -393,7 +479,9 @@
     "price": 31.2,
     "stock": 9,
     "rating": 4.7,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/TPzTJ97L/protection-And-Cleansing-Kit.png",
+    "tags": "new"
   },
   {
     "id": 45,
@@ -402,7 +490,9 @@
     "price": 33.9,
     "stock": 8,
     "rating": 4.8,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/cCmZZNsw/new-Moon-Manifestation.png",
+    "tags": "new"
   },
   {
     "id": 46,
@@ -411,7 +501,9 @@
     "price": 27.5,
     "stock": 14,
     "rating": 4.7,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/2SJYCGfc/chakra-Balancing-Kit.png",
+    "tags": "new"
   },
   {
     "id": 47,
@@ -420,7 +512,9 @@
     "price": 25.25,
     "stock": 11,
     "rating": 4.5,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/cH7GMNt2/abundance-Spell-Kit.png",
+    "tags": "new"
   },
   {
     "id": 48,
@@ -429,7 +523,9 @@
     "price": 30.0,
     "stock": 7,
     "rating": 4.6,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/sDgCSqjH/psychic-Intuition-Kit.png",
+    "tags": "new"
   },
   {
     "id": 49,
@@ -438,7 +534,9 @@
     "price": 22.99,
     "stock": 15,
     "rating": 4.4,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/kXY3ysDJ/witchs-Travel-Kit.png",
+    "tags": "new"
   },
   {
     "id": 50,
@@ -447,6 +545,8 @@
     "price": 36.0,
     "stock": 6,
     "rating": 4.9,
-    "categoryId": 3
+    "categoryId": 3,
+    "mainImage": "https://i.postimg.cc/T3y8NbWr/divination-Essentials-Kit.png",
+    "tags": "new"
   }
 ]
