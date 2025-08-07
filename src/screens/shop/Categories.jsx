@@ -5,10 +5,16 @@ import { TextDeliusSwashCapsRegular } from '../../components/TextDeliusSwashCaps
 import { colors } from '../../global/colors';
 import { useSelector, useDispatch } from 'react-redux';
 import { setCategorySelected, filterProducts } from '../../features/shop/shopSlice';
+import { useGetCategoriesQuery } from '../../services/shop/shopApi';
+
 
 
 const Categories = ({ navigation }) => {
-    const categories = useSelector((state) => (state.shopReducer.categories))
+    // const categories = useSelector((state) => (state.shopReducer.categories))
+    const {data: categories, isLoading, error} = useGetCategoriesQuery();
+    // console.log(categories)
+    
+
     const dispatch = useDispatch();
 
     const renderCategoryItem = ({ item }) => (

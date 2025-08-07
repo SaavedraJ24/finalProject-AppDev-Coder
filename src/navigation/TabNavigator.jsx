@@ -2,6 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { ShopStackNavigator } from './ShopStackNavigator';
 import { CartStackNavigator } from './CartStackNavigator';
 import { OrdersStackNavigator } from './OrdersStackNavigator';
+import { ProfileStackNavigator } from './ProfileStackNavigator';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { colors } from '../global/colors';
 
@@ -32,6 +33,12 @@ export const TabNavigator = () => {
         component={OrdersStackNavigator}
         options={{
           tabBarIcon: ({focused}) => <Icon name="format-list-bulleted" size={28} color={focused? colors.light.shadowColor : colors.light.text} />
+        }}
+      />
+      <Tab.Screen name="ProfileTab"
+        component={ProfileStackNavigator}
+        options={{
+          tabBarIcon: ({focused}) => <Icon name="account" size={28} color={focused? colors.light.shadowColor : colors.light.text} />
         }}
       />
     </Tab.Navigator>

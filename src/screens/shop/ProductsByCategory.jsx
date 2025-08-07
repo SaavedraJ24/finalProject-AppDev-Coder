@@ -5,6 +5,7 @@ import { SearchInput } from '../../components/SearchInput';
 import { FlatCard } from '../../components/FlatCard';
 import { colors } from '../../global/colors';
 import { useSelector } from 'react-redux';
+import { useGetProductsByCategoryIdQuery } from '../../services/shop/shopApi';
 
 const ProductsByCategory = ({ navigation }) => {
     const [productsFiltered, setProductsFiltered] = useState([]);
@@ -13,7 +14,8 @@ const ProductsByCategory = ({ navigation }) => {
     const category = useSelector((state) => state.shopReducer.categorySelected)
     // console.log(route);
     // const { category } = route.params;
-    const filteredByCategory = useSelector(state => state.shopReducer.productsFilteredByCategory);
+    //const filteredByCategory = useSelector(state => state.shopReducer.productsFilteredByCategory);
+    const {data: filteredByCategory, isLoading, error} = useGetProductsByCategoryIdQuery(category);
     useEffect(() => {
         // const filteredByCategory = products.filter(product => product.categoryId === category);
         if (keyword) {
@@ -24,7 +26,7 @@ const ProductsByCategory = ({ navigation }) => {
         } else {
             setProductsFiltered(filteredByCategory);
         }
-    }, [category, keyword, products]);
+    }, [category, keyword, filteredByCategory]);
 
     const renderProductByCategory = ({ item }) => (
         <Pressable onPress={() => navigation.navigate("ProductDetail", { product: item })}>

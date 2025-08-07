@@ -1,0 +1,125 @@
+import { StyleSheet, Text, View, TextInput, Pressable, Dimensions } from 'react-native'
+import { colors } from '../../global/colors'
+import { useEffect, useState } from 'react';
+import { TextDeliusBold } from '../../components/TextDeliusBold';
+import { TextDeliusSwashCapsRegular } from '../../components';
+
+const textInputWidth = Dimensions.get('window').width * 0.7
+
+const Signup = ({ navigation }) => {
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [confirmPassword, setConfirmPassword] = useState("")
+
+    return (
+        <View style={styles.gradient}>
+            <Text style={styles.title}>Vibrar con la Luna</Text>
+            <TextDeliusBold style={styles.subTitle}>Signup</TextDeliusBold>
+            <View style={styles.inputContainer}>
+                <TextInput
+                    onChangeText={(text) => setEmail(text)}
+                    placeholderTextColor={colors.light.shadowColor}
+                    placeholder="Email"
+                    style={styles.textInput}
+                />
+                <TextInput
+                    onChangeText={(text) => setPassword(text)}
+                    placeholderTextColor={colors.light.shadowColor}
+                    placeholder='Password'
+                    style={styles.textInput}
+                    secureTextEntry
+                />
+                <TextInput
+                    onChangeText={(text) => setConfirmPassword(text)}
+                    placeholderTextColor={colors.light.shadowColor}
+                    placeholder='Confirm password'
+                    style={styles.textInput}
+                    secureTextEntry
+                />
+            </View>
+            <View style={styles.footTextContainer}>
+                <TextDeliusSwashCapsRegular style={styles.accentText}>Already have an account?</TextDeliusSwashCapsRegular>
+                <Pressable onPress={() => navigation.navigate('Login')}>
+                    <TextDeliusSwashCapsRegular style={
+                        {
+                            ...styles.accentText,
+                            ...styles.underLineText
+                        }
+                    }>
+                        Login
+                    </TextDeliusSwashCapsRegular>
+                </Pressable>
+            </View>
+
+            <Pressable style={styles.btn} onPress={null}><TextDeliusBold style={styles.btnText}>Create</TextDeliusBold></Pressable>
+
+        </View>
+    )
+}
+
+export default Signup;
+
+const styles = StyleSheet.create({
+    gradient: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    title: {
+        color: colors.light.headline,
+        fontFamily: 'Pacifico-Regular',
+        fontSize: 40,
+        letterSpacing: 1,
+    },
+    subTitle: {
+        fontSize: 24,
+        color: colors.light.darkBlue,
+        letterSpacing: 1,
+    },
+    inputContainer: {
+        gap: 16,
+        margin: 16,
+        marginTop: 48,
+        alignItems: 'center',
+    },
+    textInput: {
+        fontFamily: 'DeliusSwashCaps-Regular',
+        textAlign: 'left',
+        width: 240,
+        padding: 8,
+        paddingLeft: 16,
+        borderRadius: 16,
+        backgroundColor: colors.light.darkBlue,
+        color: colors.light.tags,
+    },
+    footTextContainer: {
+        flexDirection: 'row',
+        gap: 4,
+    },
+    accentText: {
+        color: colors.light.tags,
+    },
+    underLineText: {
+        textDecorationLine: 'underline',
+    },
+    btn: {
+        paddingVertical: 8,
+        paddingHorizontal: 32,
+        backgroundColor: colors.light.purchaseBtn,
+        borderRadius: 16,
+        margin: 24,
+    },
+    btnText: {
+        alignItems: 'center',
+        color: colors.light.darkBlue,
+        fontSize: 20,
+        textTransform: 'uppercase'
+    },
+    // error: {
+    //     padding:16,
+    //     backgroundColor:colors.red,
+    //     borderRadius:8,
+    //     color: colors.white
+    // }
+})
