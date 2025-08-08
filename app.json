@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "finalProject-Saavedra",
-    "slug": "finalProject-Saavedra",
+    "slug": "final-coder-tarot-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,11 @@
       "backgroundColor": "#bb756e"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.joaquinsaavedra.finalProjectSaavedra",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -32,8 +36,9 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "4bf148c6-fb42-48f6-9bdd-9da43aee9de1"
+        "projectId": "6e15558a-3c59-4256-ba86-f42ba6bcb3aa"
       }
-    }
+    },
+    "owner": "joaquinsaavedrae"
   }
 }

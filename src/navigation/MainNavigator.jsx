@@ -4,11 +4,10 @@ import { TabNavigator } from "./TabNavigator";
 import { useDispatch, useSelector } from "react-redux";
 import { useGetProfilePictureQuery } from "../services/user/userApi";
 import { setProfilePicture, setUser } from "../features/user/userSlice";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { initSessionTable, getSession } from "../db";
 import { ActivityIndicator, View } from "react-native";
 import { colors } from "../global/colors";
-
 
 export const MainNavigator = () => {
     const userEmail = useSelector(state => state.userReducer.userEmail);

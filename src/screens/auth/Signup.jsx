@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { TextDeliusBold } from '../../components/TextDeliusBold';
 import { TextDeliusSwashCapsRegular } from '../../components';
 import { signupSchema } from '../../validations/yupSchema';
-
+import { useSignupMutation } from '../../services/auth/authApi';
 const textInputWidth = Dimensions.get('window').width * 0.7
 
 const Signup = ({ navigation }) => {
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
         textTransform: 'uppercase'
     },
     error: {
-        padding: 16,
+        paddingHorizontal: 16,
         backgroundColor: colors.light.tags,
         borderRadius: 8,
         color: colors.light.darkBlue,
