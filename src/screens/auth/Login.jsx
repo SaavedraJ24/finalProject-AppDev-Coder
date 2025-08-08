@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, Pressable, Dimensions } from 'react-native'
+import { StyleSheet, Text, View, TextInput, Pressable, Dimensions, Switch } from 'react-native'
 import { colors } from '../../global/colors';
 import { useState, useEffect } from 'react';
 import { TextDeliusBold } from '../../components/TextDeliusBold';
@@ -6,14 +6,14 @@ import { TextDeliusSwashCapsRegular } from '../../components';
 import { useLoginMutation } from '../../services/auth/authApi';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../features/user/userSlice';
-// import { saveSession, clearSession } from '../../db';
+import { saveSession, clearSession } from '../../db';
 
 const textInputWidth = Dimensions.get('window').width * 0.7
 
 const Login = ({ navigation, route }) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    // const [persistSession, setPersistSession] = useState(false)
+    const [persistSession, setPersistSession] = useState(false)
     const [triggerLogin, result] = useLoginMutation()
 
     const dispatch = useDispatch()
@@ -21,37 +21,36 @@ const Login = ({ navigation, route }) => {
         triggerLogin({ email, password })
     }
     console.log(result)
-    
+    console.log(persistSession);
+
     useEffect(() => {
         if (result.status === "fulfilled") {
-            dispatch(setUser({email: result.data.email, localId: result.data.localId}))
+            dispatch(setUser({ email: result.data.email, localId: result.data.localId }))
         }
     }, [result]);
 
-    // console.log("Mantener sesión: ", persistSession)
 
-    // useEffect(() => {
-    //     const saveLoginSession = async () => {
-    //         if (result.status === "fulfilled") {
-    //             try {
-    //                 const { localId, email } = result.data;
+    useEffect(() => {
+        const saveLoginSession = async () => {
+            if (result.status === "fulfilled") {
+                try {
+                    const { localId, email } = result.data;
 
-    //                 if (persistSession) {
-    //                     await saveSession(localId, email);
-    //                 } else {
-    //                     await clearSession();
-    //                 }
-    //                 dispatch(setUser({ localId, email }));
-    //             } catch (error) {
-    //                 console.log("Error al guardar sesión:", error);
-    //             }
-    //         } else if (result.status === "rejected") {
-    //             console.log("Hubo un error al iniciar sesión");
-    //         }
-    //     };
-
-    //     saveLoginSession();
-    // }, [result]);
+                    if (persistSession) {
+                        await saveSession(localId, email);
+                    } else {
+                        await clearSession();
+                    }
+                    dispatch(setUser({ localId, email }));
+                } catch (error) {
+                    console.log("Error al guardar sesión:", error);
+                }
+            } else if (result.status === "rejected") {
+                console.log("Hubo un error al iniciar sesión");
+            }
+        };
+        saveLoginSession();
+    }, [result]);
 
 
     return (
@@ -89,12 +88,12 @@ const Login = ({ navigation, route }) => {
 
             <Pressable style={styles.btn} onPress={onsubmit}><TextDeliusBold style={styles.btnText}>Enter</TextDeliusBold></Pressable>
             <View style={styles.rememberMe}>
-                <TextDeliusSwashCapsRegular style={{ color: colors.light.shadowColor }}>Remember me.</TextDeliusSwashCapsRegular>
-                {/* <Switch
+                <TextDeliusSwashCapsRegular style={{ fontSize: 16, color: colors.light.shadowColor }}>Remember me</TextDeliusSwashCapsRegular>
+                <Switch
                     onValueChange={() => setPersistSession(!persistSession)}
                     value={persistSession}
                     trackColor={{ false: '#767577', true: '#81b0ff' }}
-                /> */}
+                />
             </View>
         </View>
     )
@@ -150,7 +149,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 32,
         backgroundColor: colors.light.purchaseBtn,
         borderRadius: 16,
-        margin: 24,
+        marginVertical: 24,
     },
     btnText: {
         alignItems: 'center',
@@ -168,6 +167,6 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        gap: 8
+        gap: 4
     }
 })

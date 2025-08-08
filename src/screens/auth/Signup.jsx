@@ -3,6 +3,7 @@ import { colors } from '../../global/colors'
 import { useEffect, useState } from 'react';
 import { TextDeliusBold } from '../../components/TextDeliusBold';
 import { TextDeliusSwashCapsRegular } from '../../components';
+import { signupSchema } from '../../validations/yupSchema';
 
 const textInputWidth = Dimensions.get('window').width * 0.7
 
@@ -11,6 +12,47 @@ const Signup = ({ navigation }) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
+    const [triggerSignUp, result] = useSignupMutation()
+
+    const [errorEmail, setErrorEmail] = useState("")
+    const [errorPassword, setErrorPassword] = useState("")
+    const [errorConfirmPassword, setErrorConfirmPassword] = useState("")
+
+    useEffect(() => {
+        if (result.status === "fulfilled") {
+            console.log("Usuario creado exitosamente")
+            navigation.navigate("Login", { message: "Usuario creado con éxito" })
+        } else if (result.status === "rejected") {
+            console.log("Hubo un error al crear el usuario")
+        }
+    }, [result])
+
+
+    const onsubmit = () => {
+        try {
+            signupSchema.validateSync({ email, password, confirmPassword })
+            setErrorEmail("")
+            setErrorPassword("")
+            setErrorConfirmPassword("")
+            triggerSignUp({ email, password })
+        } catch (error) {
+            switch (error.path) {
+                case "email":
+                    setErrorEmail(error.message)
+                    break
+                case "password":
+                    setErrorPassword(error.message)
+                    break
+                case "confirmPassword":
+                    setErrorConfirmPassword(error.message)
+                    break
+                default:
+                    break
+            }
+        }
+        triggerSignUp({ email, password });
+    }
+
 
     return (
         <View style={styles.gradient}>
@@ -23,6 +65,7 @@ const Signup = ({ navigation }) => {
                     placeholder="Email"
                     style={styles.textInput}
                 />
+                {(errorEmail && !errorPassword) && <TextDeliusSwashCapsRegular style={styles.error}>{errorEmail}</TextDeliusSwashCapsRegular>}
                 <TextInput
                     onChangeText={(text) => setPassword(text)}
                     placeholderTextColor={colors.light.shadowColor}
@@ -30,6 +73,7 @@ const Signup = ({ navigation }) => {
                     style={styles.textInput}
                     secureTextEntry
                 />
+                {errorConfirmPassword && <TextDeliusSwashCapsRegular style={styles.error}>{errorConfirmPassword}</TextDeliusSwashCapsRegular>}
                 <TextInput
                     onChangeText={(text) => setConfirmPassword(text)}
                     placeholderTextColor={colors.light.shadowColor}
@@ -37,6 +81,7 @@ const Signup = ({ navigation }) => {
                     style={styles.textInput}
                     secureTextEntry
                 />
+                {errorConfirmPassword && <TextDeliusSwashCapsRegular style={styles.error}>{errorConfirmPassword}</TextDeliusSwashCapsRegular>}
             </View>
             <View style={styles.footTextContainer}>
                 <TextDeliusSwashCapsRegular style={styles.accentText}>Already have an account?</TextDeliusSwashCapsRegular>
@@ -52,7 +97,7 @@ const Signup = ({ navigation }) => {
                 </Pressable>
             </View>
 
-            <Pressable style={styles.btn} onPress={null}><TextDeliusBold style={styles.btnText}>Create</TextDeliusBold></Pressable>
+            <Pressable style={styles.btn} onPress={onsubmit}><TextDeliusBold style={styles.btnText}>Create account</TextDeliusBold></Pressable>
 
         </View>
     )
@@ -84,6 +129,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     textInput: {
+        width: textInputWidth,
         fontFamily: 'DeliusSwashCaps-Regular',
         textAlign: 'left',
         width: 240,
@@ -116,10 +162,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         textTransform: 'uppercase'
     },
-    // error: {
-    //     padding:16,
-    //     backgroundColor:colors.red,
-    //     borderRadius:8,
-    //     color: colors.white
-    // }
+    error: {
+        padding: 16,
+        backgroundColor: colors.light.tags,
+        borderRadius: 8,
+        color: colors.light.darkBlue,
+    }
 })
